@@ -1,0 +1,122 @@
+body{
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.938rem;
+}
+.mainBody{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);}
+.mainCard{
+    grid-column: span 4;
+    justify-content: center;
+    text-align: center;
+    line-height: 1rem;}
+.mainHeaderText{
+    color: hsl(234, 12%, 34%);    
+    font-weight: 400;
+}
+.mainHeaderTextS{
+    color:hsl(234, 12%, 34%);
+    font-weight: 600;
+    
+}
+.mainSubText{
+    color:hsl(229, 6%, 66%);
+    font-weight: 200;
+    margin: 0% 30%;
+    margin-bottom: 2%;
+    
+}
+
+.supervisorCard{
+    grid-column: span 1.5;
+    
+    background-color:white;
+    border: 10px;
+    border-radius: 5%;
+    border-style: none;
+    border-top-style: solid;
+    border-top-color: hsl(180, 62%, 55%);
+    
+}
+.supervisorHeaderText{
+    color:hsl(234, 12%, 34%);
+    font-weight: 600;
+}
+.supervisorSubText{
+    color:hsl(229, 6%, 66%);
+    font-weight: 200;
+    
+}
+.iconSupervisor{align-items: end;}
+
+.teamCard{
+    grid-column: span 1.5;
+    background-color:white;
+    border: 10px;
+    border-radius: 5%;
+    border-style: none;
+    border-top-style: solid;
+    border-top-color:hsl(0, 78%, 62%) ;
+}
+.teamHeaderText{
+    color:hsl(234, 12%, 34%);
+    font-weight: 600;
+}
+.teamSubText{
+    color:hsl(229, 6%, 66%);
+    font-weight: 200;
+    
+}
+.iconTeam{}
+
+.karmaCard{
+    grid-column: span 2;
+    background-color:white;
+    border: 10px;
+    border-radius: 5%;
+    border-style: none;
+    border-top-style: solid;
+    border-top-color:  hsl(34, 97%, 64%);
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.karmaHeaderText{
+    color:hsl(234, 12%, 34%);
+    font-weight: 600;
+}
+.karmaSubText{
+    color:hsl(229, 6%, 66%);
+    font-weight: 200;
+    margin-right: 25%;
+    
+    
+}
+.iconKarma{}
+
+.calculatorCard{
+    grid-column: span 1.5;
+    background-color:white;    
+    border: 10px;
+    border-radius: 5%;
+    border-style: none;
+    border-top-style: solid;
+    border-top-color:  hsl(212, 86%, 64%);
+    grid-column-start: 4;
+    grid-column-end:5;
+    grid-row-start:  2 ;    
+}
+.calculatorHeaderText{
+    color:hsl(234, 12%, 34%);
+    font-weight: 400;
+}
+.calculatorSubText{
+    color:hsl(229, 6%, 66%);
+    font-weight: 200;
+    
+}
+.iconCalculator{}
+
+@media screen and (max-width:600px ){
+    
+}
