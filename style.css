@@ -5,14 +5,15 @@ body{
 }
 .mainBody{
     display: grid;
-    grid-template-columns: repeat(4,1fr);}
+    grid-template-columns: repeat(1,1fr);}
 .mainCard{
     grid-column: span 4;
     justify-content: center;
     text-align: center;
-    line-height: 1rem;}
+    line-height: 1rem;
+    }
 .mainHeaderText{
-    color: hsl(234, 12%, 34%);    
+    color: hsl(229, 6%, 66%);  
     font-weight: 400;
 }
 .mainHeaderTextS{
@@ -27,16 +28,28 @@ body{
     margin-bottom: 2%;
     
 }
-
+.cards{
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 2;
+    column-gap: 2rem;}
 .supervisorCard{
     grid-column: span 1.5;
-    
+    grid-column-start: 1;
+    grid-column-end:2;
+    grid-row-start:  1 ;    
+    grid-row-end: 3;
+    margin-top: 30%;
+    margin-bottom: 30%;
     background-color:white;
     border: 10px;
     border-radius: 5%;
     border-style: none;
     border-top-style: solid;
     border-top-color: hsl(180, 62%, 55%);
+    padding-left: 10%;
+    padding-right: 10%;
+    box-shadow: 5px 5px #a3a5ae;
     
 }
 .supervisorHeaderText{
@@ -48,16 +61,25 @@ body{
     font-weight: 200;
     
 }
-.iconSupervisor{align-items: end;}
+.iconSupervisor{
+
+    display: flex;
+    margin-left: auto;
+    }
 
 .teamCard{
-    grid-column: span 1.5;
+    grid-row-start:  1 ;    
+    grid-row-end: 1;
     background-color:white;
     border: 10px;
     border-radius: 5%;
     border-style: none;
     border-top-style: solid;
     border-top-color:hsl(0, 78%, 62%) ;
+    margin-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-shadow: 5px 5px #a3a5ae;
 }
 .teamHeaderText{
     color:hsl(234, 12%, 34%);
@@ -68,7 +90,10 @@ body{
     font-weight: 200;
     
 }
-.iconTeam{}
+.iconTeam{    
+
+    display: flex;
+    margin-left: auto;}
 
 .karmaCard{
     grid-column: span 2;
@@ -80,6 +105,9 @@ body{
     border-top-color:  hsl(34, 97%, 64%);
     grid-column-start: 2;
     grid-column-end: 3;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-shadow: 5px 5px #a3a5ae;
 }
 .karmaHeaderText{
     color:hsl(234, 12%, 34%);
@@ -88,11 +116,15 @@ body{
 .karmaSubText{
     color:hsl(229, 6%, 66%);
     font-weight: 200;
-    margin-right: 25%;
+    
     
     
 }
-.iconKarma{}
+.iconKarma{
+
+    display: flex;
+    margin-left: auto;
+}
 
 .calculatorCard{
     grid-column: span 1.5;
@@ -102,9 +134,15 @@ body{
     border-style: none;
     border-top-style: solid;
     border-top-color:  hsl(212, 86%, 64%);
-    grid-column-start: 4;
-    grid-column-end:5;
-    grid-row-start:  2 ;    
+    grid-column-start: 3;
+    grid-column-end:4;
+    grid-row-start:  1 ;    
+    grid-row-end: 3;
+    margin-top: 30%;
+    margin-bottom: 30%;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-shadow: 5px 5px #a3a5ae;
 }
 .calculatorHeaderText{
     color:hsl(234, 12%, 34%);
@@ -115,7 +153,10 @@ body{
     font-weight: 200;
     
 }
-.iconCalculator{}
+.iconCalculator{
+    display: flex;
+    margin-left: auto;
+    }
 
 @media screen and (max-width:600px ){
     
